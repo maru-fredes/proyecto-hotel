@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restaurante</title>
+</head>
+<body>
+<nav>
+<h1>
+    <a href="index.html">
+    <img src="images/logo-principal.png" alt="logo del hotel" width="160">
+    </a>
+</h1>
+<ul>
+    <li><a href="#carta">Carta</a></li>
+    <li><a href="#cava">Cava</a></li>
+    <li><a href="#tardes">Tardes de Té</a></li>
+    <li><a href="#clases">Clases de cocina</a></li>
+    <li><a href="#galeria">Galeria</a></li>
+</ul>
+<div>
+    <img src="images/bandera-española.jpg" alt="idioma" width="40">
+</div>
+</nav>
+<header>
+
+    <img src="images/comida.jpg" alt="muestra de cocina" width="900">
+    <img src="images/comida1.jpg" alt="muestra de cocina" width="900">
+    <img src="images/restaurante.jpg" alt="muestra de cocina" width="900">
+
+    <div>
+        <h3>Reservas</h3>
+        <form action="procesar-info.php" method="post">
+            <input type="text" name="nombre-y-apellido" placeholder="Nombre y apellido">
+            <input type="email" name="email" placeholder="Introduzca su e-mail" required>
+            <label for="date">fecha de reserva</label>
+            <input type="date" name="Reservas">
+            <input type="submit" value="Reservar">
+        </form>
+    </div>
+    <h2>Nuestro restaurante</h2>
+    <p>La cocina de nuestro restaurante se basa en los sabores simples, naturales, que resultan de combinar productos
+     regionales de calidad y de cada estación con la creatividad de nuestro chef. Platos auténticos de nuestra 
+     tierra con un toque profesional. Sencillez y calidad gastronómica, maridadas con los mejores vinos mendocinos.</p>
+    <div>
+        <h3>Horarios:</h3>
+        <h4> Cena:</h4>
+        <p> Lunes a Domingos de 19:30 a 23 hs.</p>
+        <h4>Almuerzo:</h4>
+       <p>Sábados, Domingos y feriados de 13 a 15 hs. *Último horario de ingreso 22:30 hs.</p>
+    </div>  
+   
+</header>
+<main>
+    <section>
+       <H2 id="carta">Carta</H2>
+       <div>
+           <h3>Entradas -Appetizer</h3>
+           <hr>
+           <ul>
+           <li>Ensalada de quinoa y kale, remolacha a la sal, cebolla acidulada, gremolata de berros - Quinoa and kale salad,
+                beet with salt, acidic onions, watercress gremolata</li>
+           <li>Antipasto estilo italiano, burrata fresca, prosciutto, tomate, palta y oliva - Italian style antipasto,
+                fresh burrata, prosciutto, tomato, avocado and olive </li>
+         </ul>
+           <h4>Ensalada fresca del día - Fresh salad.</h4>
+           <ul>
+           <li>Sopa de choclo y cardamomo, Zapallo asado - Corn and cardamom soup, roasted pumpkin</li>
+           <li>Púlpito español salteado y papa confitada con pimentón ahumado - Sauteed Spanish pulpit
+                and candied potato with smoked paprika</li>
+           <li>Provoleta ahumada, chimichurri argentino y tomates secos - Smoked provoleta, argentine chimichurri and died tomatoes.</li>
+         </ul>
+        </div> 
+       <div>
+           <h3>Principales –Main Courses</h3>
+           <hr>
+           <ul>
+                <li> de bife, ratatuille y pickles hechos en casa - Beef eye, ratatuille and pickles</li>
+                <li>Abadejo, puré de zapallo con ajo negro, emulsión de zanahoria y sésamotostado - Haddock,
+                 pumpkin puree with black garlic and carrot and sesame emulsion.</li>
+                <li>Conejo estofado en vino blanco con su fondo de cocción - Rabbit stewed in wine with its its own juices</li>
+                <li>Filet Cordero, trigo Burgol y pepinillos en conserva - Lamb filet, Burgol wheat and canned pickles</li>
+                <li>>Matambre de cerdo, duraznos, zucchini y Verdeo grillado, pesto de albahaca y limón - Grilled pork, peaches,
+                     zucchini and grilled Verdeo, basil and lemon pesto</li>
+                <li>Hamburguesa casera, panceta, tomate, pepino y queso muzzarella, papas al horno - Homemade hamburger, bacon,
+                     tomato, cucumber and mozzarella cheese. bakedpotatoes</li>
+           </ul>
+       </div>
+       <div>
+           <h3>Clásicos de la cocina-Tradicional Courses</h3>
+           <hr>
+           <ul>
+               <li>Milanesa de peceto “la napolitana” y bastones de papa - Escalope with tomatoes sauce and cheese, and potatoes sticks</li>
+               <li>Carne a la masa con bastones de papa - Meat pie with potatoes stick</li>
+               <li>Humita mendocina y zapallo ingles al horno - Mendoza´s Corn paste with English pumpkin</li>
+           </ul>
+      </div>
+      <div>
+          <h3>Pastas</h3>
+          <hr>
+          <ul>
+              <li>Penne rigate, hongos, puerros, repollitos de bruselas y crema  - Penne rigate, mushrooms, leeks, brussels sprouts and cream</li>
+              <li>Ravioles de queso de cabra y pistachos, salsa de tomates asados y endivias  - Ravioli with goat cheese and pistachios, cream based on rose wine and roasted endives</li>
+              <li>Risotto de brócoli con queso ahumado, n´duja - Broccoli risotto with smoked cheese</li>
+              <li>Linguini libre de gluten (salsa a elección de la carta)  -  Gluten free Linguini (sauce of your choice from the menú)</li>
+              <li>Tagliatelle nero de sepia con langostinos - Tagliatelle nero of cuttlefish with prawns</li>
+          </ul>
+       </div> 
+       <div>
+           <h3>Postres- Desserts</h3>
+           <hr>
+           <ul>
+               <li>Chocolate húmedo, confitura de frutos rojos y crema batida - >Chocolate, raspberry jam and whipped cream</li>
+               <li>Cremas Heladas - Ice Creams</li>
+               <li>Flan argentino con dulce de leche - Argentine flan with dulce de leche</li>
+               <li>Quesos y dulces artesanales - Cheese and homemade jams</li>
+               <li>Crumble de durazno quemado, frangipane y almibar de espacias - Cheese cake de Baileys y Dulce de Leche </li>
+           </ul>
+       </div>
+    </section>
+    <section id="cava">
+        <img src="images/cava.jpg" alt="imagen de cava" width="400">
+        <h2>Cava</h2>
+        <hr>
+        <p>Un lugar apacible, donde degustar las mejores etiquetas de Mendoza. Entre ellos los de nuestra propia cosecha de Malbec.
+         Además degustaciones privadas con sommelier.</p>
+         
+    </section>
+    <section id="tardes">
+        <a>
+            <img src="images/tardes-de-te.jpg" alt="imagen tardes de te " width="400">
+        </a>
+        <h2>Tardes de Té</h2>
+        <hr>
+        <p> Pastelería tradicional hecha en casa - Variedad de Sándwiches en pan artesana - Jugo de naranja - Infusiones calientes -
+         Brindis con espumante</p>
+         <img src="images/TARDES-DE-TE.png" alt="tardes de te " width="400">
+
+    </section>
+    <section id="clases">
+        <img src="images/clases-de-cocina.jpg" alt="imagen clases de cocina" width="400">
+         <h2>Clases de Cocina</h2>
+         <p>Disfrute de una distendida clase de cocina y aprenda los secretos de típicos platos argentinos.</p>            
+         <p> U$D 95 por persona</p>
+         <img src="images/clases-de-cocina1.png" alt="clases de cocina" width="400">
+    </section>
+    <section>
+        <h2 id="galeria">Galeria</h2>
+        <div>
+            <img src="images/galeria-restaurante.jpg" alt="muestra de cocina" width="900">
+            <img src="images/galeria-restaurante1.jpg" alt="muestra de cocina" width="900">
+            <img src="images/galeria-restaurante2.jpg" alt="muestra de cocina" width="900">
+            <img src="images/galeria-restaurante3.jpg" alt="muestra de cocina" width="900">
+            <img src="images/mesa.jpg" alt="muestra de cocina" width="900">
+        </div>
+    </section>
+</main>
+<footer>
+    <h3>Contacto</h3>
+    <div>
+        <h4>Telefono</h4>
+        <p>2615352115-4913049</p>
+        <h4>E-mail</h4>
+        <p>richy-hotel-spa@gmail.com</p>
+        <h4>Direccion</h4>
+        <p>Roque Saenz Peña 5500-5000 Lujan, Mendoza</p>
+    </div>
+    <div>
+        <h3>Siguenos</h3>
+        <img src="images/logo-fb.png" alt="facebook" width="90">
+        <img src="images/logo-insta.jpg" alt="instagram" width="70">
+        <img src="images/logo-tw.png" alt="twitter" width="40">
+    </div>
+    <div>
+        <h3>Suscribirse</h3>
+        <input type="email" name="email-suscripcion" placeholder="Introduzca su e-mail" required>
+        <input type="submit" value="SUSCRIBIRSE">
+    </div>
+</footer>
+</body>
+</html>

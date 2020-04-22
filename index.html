@@ -1,0 +1,317 @@
+<!--html:5-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Richy</title>
+  <link rel="icon" type="imagen/png" sizes="32x32" href="favicon-32x32.png">
+</head>
+<body>
+<nav>
+    <a href="index.html">
+     <h1 id="inicio"> <img src="images/logo-principal.png" alt="logo del hotel" width="160"></h1>
+    </a>
+  
+  <!--no olvidar agregar redireccion-->
+  <ul>
+    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#habitaciones">Habitaciones</a></li>
+    <li><a href="#promos">Promociones</a></li>   
+    <li><a href="#spa">Spa</a></li>
+    <li><a href="restaurante.html">Restaurante</a></li>
+    <li><a href="#wine">Wine tour</a></li>
+    <li> <a href="#servicios">Servicios</a></li>
+    <li><a href="#ubicacion">Ubicacion</a></li>  
+  </ul>
+  <div>
+    <a href="#">
+    <img src="images/bandera-española.jpg" alt="idioma" width="40">
+    </a>
+  </div>
+</nav>
+<header>
+ <form action="procesar-info.php" method="post">
+    <input type="text" name="nombre-y-apellido" placeholder="Nombre y apellido">
+    <input type="email" name="email" placeholder="Introduzca su e-mail" required>
+    <label for="date">Fecha de llegada</label>
+    <input type="date" name="entrada">
+    <label for="date">Fecha de salida</label>
+    <input type="date" name="salida">
+    <!--aca se selecciona el tipo de habitacion COMPLETAR!!!!!!-->
+    <select name="habitaciones">
+      <option value="h1">Habitación Doble Estándar</option>
+      <option value="h2">Habitación Doble Superior</option>
+      <option value="h3">Cuvée Suite</option>
+      <option value="h4">Habitación Triple Estándar</option>
+    
+    </select>
+    <input type="submit" value="Reservar">
+  </form> 
+  <!--luego se ajustara el tamaño dependiendo del diseño de la pagina-->
+  <img src="images/inicionuevo.jpg" alt="imagen del hotel" width="900">
+  <img src="images/inicio1.jpg" alt="imagen del hotel " width="900">
+  <img src="images/foto-inicio2.jpg" alt="imagen del hotel" width="900">
+  <img src="images/inicio3.jpg" alt="imagen del hotel" width="900">
+  <img src="images/inicio4.jpg" alt="imagen del hotel" width="900">
+  <img src="images/inicio5.jpg" alt="imagen del hotel" width="900">
+  <h2>Richy Hotel & Spa</h2>
+  <p>Richy Hotel & Spa ubicado en Vistalba, Luján de Cuyo, a 14 km de Mendoza, ofrece amplias y luminosas habitaciones con balcón, rodeadas
+   de jardines de viñedos, olivos y vistas a la montaña..</p>
+  <p>El hotel cuenta con Wi-Fi gratuita, piscina atemperada y tours a diferentes bodegas a sólo 2 minutos en auto o bicicleta. Además 
+   del desayuno buffet, podrá explorar sabores simples, naturales y llenos de creatividad en el Restaurant del hotel, acompañados por
+      los mejores ejemplares de la cava subterránea de vinos.</p>
+  <p>En el spa disfrutará de masajes, sauna seco, ducha escocesa y jacuzzi con impactantes vistas a la cordillera de los Andes. 
+    La combinación perfecta que garantiza su relax y disfrute.</p>
+</header>
+<main>
+  <!--habitaciones-promociones-spa-restaurante-citytour-ubicacion-el aside es comentarios de los usuarios-->
+  <section>
+    <h2 id="habitaciones">Habitaciones</h2>
+    <hr>
+    <article>
+      <img src="images/habitacion-doble-estandar.jpg" alt="imagen de la habitacion" width="400">
+      <img src="images/habitacion-doble-estandar1.jpg" alt="imagen de la habitacion" width="400">
+      <img src="images/habitacion-doble-estandar2.jpg" alt="imagen del baño" width="400">
+      <img src="images/habitacion-doble-estandar3.jpg" alt="imagen del baño" width="400">
+      <img src="images/baño-doble-estandar.jpg" alt="imagen del baño"  width="400">
+      <img src="images/baño-doble-estandar1.jpg" alt="imagen del baño" width="400">
+      <h3>Habitación Doble Estándar - 1 o 2 camas</h3>
+      <p>Galería exterior. LCD 32 con TV satelital. Somier superking (o dos camas individuales). Baño privado con bañera.
+      Aire acondicionado y calefacción central. Minibar. Infusiones de cortesía. Teléfono con DDI/DDN. Cerradura magnética.
+      Caja de seguridad digital. Acceso GRATUITO a WiFi.</p>
+      <input type="submit" value="Ver disponibilidad">
+    </article>
+    <article>
+      <img src="images/habitacion-doble-superior.jpg" alt="imagen de la habitacion" width="400">
+      <img src="images/habitacion-doble-superior1.jpg" alt="imagen de la habitacion" width="400">
+      <img src="images/habitacion-doble-superior2.jpg" alt="imagen de la habitacion" width="400">
+      <img src="images/habitacion-doble-superior3ç.jpg" alt="imagen de la habitacion" width="400">
+      <img src="images/baño-doble-superior.jpg" alt="imagen del baño" width="400">
+      <h3>Habitación Doble Superior</h3>
+      <p>Terraza con vista montaña y vides. Smart TV 48 Netflix-ready con TV Satelital. Máquina de café Nespresso.
+      Degustación de Vinos (por persona, por estadía). Teléfono inalámbrico con DDI/DDN. Escritorio y sillón de lectura. 
+      Baño privado con lavabo doble y bañera. Menú de almohadas. Somier superking size. Aire acondicionado y calefacción 
+      central. Minibar. Cerradura magnética. Caja de seguridad digital. Acceso GRATUITO a WiFi.</p>
+      <input type="submit" value="Ver disponibilidad">
+    </article>
+    <br> 
+    <article>
+      <img src="images/cuvee.jpg" alt="imagen de la habitacion" width="400">
+      <img src="images/cuve-baño.jpg" alt="imagen del baño" width="400">
+      <img src="images/cuve-baño2.jpg" alt="imagen del baño" width="400">
+      <h3>Cuvée Suite</h3>
+      <p>Arquitectura símil Cuva de vinos. Jacuzzi in-room. Ducha escocesa in-room. Galería con pérgola de vides. Masaje de 30 minutos
+      (Por persona, por estadía). Smart TV 50 Netflix-ready con TV Satelital. Máquina de café Nespresso. Teléfono inalámbrico. Sillón 
+      de lectura. Baño privado. Menú de almohadas. Somier superking size (2,2 x 2 mts). Aire acondicionado y calefacción. Minibar. Caja 
+      seguridad digital. Acceso GRATUITO a WiFi.</p>
+        <input type="submit" value="Ver disponibilidad">
+    </article>
+    <article>
+      <img src="images/habitacion3estandar.jpg" alt="imagen de la habitacion" width="400">
+      <img src="images/habitacion3estandar1.jpg" alt="iamgen de la habitacion" width="400">
+      <img src="images/habitacion3estandar2.jpg" alt="imagen del baño" width="400">
+      <img src="images/habitacion3estandar3.jpg" alt="imagen del baño" width="400">
+      <h3>Habitación Triple Estándar</h3>
+      <p>Galería exterior. LCD 32 con TV satelital. Somier superking + cama adicional; o 3 camas individuales. Baño privado con bañera.
+      Aire acondicionado y calefacción central. Minibar. Infusiones de cortesía. Teléfono con DDI/DDN. Cerradura magnética. Caja de
+      seguridad digital. Acceso GRATUITO a WiFi.</p>
+      <input type="submit" value="Ver disponibilidad">
+    </article>
+  </section>
+  <section id="promos">
+    <h2 > Promociones</h2>
+    <hr>
+    <article>
+     <img src="images/habitacion3estandar1.jpg" alt="imagen de una de las habitaciones" width="400">
+      <h3>NO REEMBOLSABLE</h3>
+      <p>10% de descuento reservando dentro de los 44 días de su ingreso</p>
+    </article>
+    <br>
+    <article>
+      <img src="images/promo-anticipada.jpg" alt="imagen de promocion" width="400">
+      <h3>RESERVA ANTICIPADA</h3>
+      <p>20% de descuento reservando al menos 45 días antes de su ingreso</p>
+      <input type="submit" value="Reservar">
+    </article>
+   <br>
+   <article>
+     <img src="images/promo-directa.jpg" alt="images de promocion" width="400">
+      <h3>BENEFICIOS PARA RESERVAS DIRECTAS</h3>    
+      <p>Mejor precio garantizado + Circuito Clásico de Spa gratis + Botella de Vino de Regalo + Cancelación Gratuita hasta 48hs antes*</p>
+      <input type="submit" value="Reservar">
+    </article>
+   <br>
+   <article>
+     <img src="images/promo-sexta.jpg" alt="images de promocion" width="400">
+     <h3>Promo luna de miel</h3>
+     <p>¿Cuál mejor manera de empezar su vida juntos? Recibe una habitación especial</p>
+    <ul>
+      <li>superking size garantizada</li>
+      <li>Decoración personalizada en el cuarto </li>
+      <li>Vino espumoso, cortesía de bienvenida</li>
+      <li>1 día con desayuno continental en la habitación</li>
+      <li>50 minutos de masaje para dos personas en la Spa</li>
+    </ul>
+    <p>La oferta es válida para estancias desde 5 noches en adelante. Es necesario reservar directamente a través
+      de la página web del hotel y presentar el certificado de matrimonio a la llegada (la fecha de check-in tiene 
+      que estar programada dentro de los primeros 6 meses después de la boda).</p>
+      <input type="submit" value="Reservar">
+    </article>
+    <br>
+    <br>
+  </section>
+  <div>
+    <img src="images/spa.jpg" alt="imagen de muestra del spa" width="400">
+    <img src="images/spa1.jpg" alt="imagen de muestra del spa" width="400">
+    <img src="images/spa2.jpg" alt="imagen de muestra del spa" width="400">  
+    <img src="images/spa9.jpg" alt="imagen de muestra del spa"  width="400">
+    <img src="images/spa0.jpg" alt="imagen de muestra del spa" width="400"> 
+    <img src="images/spa5.jpg" alt="imagen de muestra del spa" width="400"> 
+    <img src="images/spa6.jpg" alt="imagen de muestra del spa" width="400">
+  </div>
+  <section id="spa">
+    
+    <h2>Spa</h2>
+    <hr>
+    <p>A la hora de relajarse, permítase disfrutar de la experiencia que Richy Hotel & Spa tiene para ofrecer, en un
+       sector exclusivo, donde los huéspedes podrán complementar su estadía con una variedad de tratamientos y masajes.</p>
+    <p>El acceso al SPA es exclusivo para mayores de 18 años.</p>
+    <p>Los tratamientos, masajes y el uso de los Jacuzzis son servicios con cargo adicional.</p>
+    <p>Horario Spa:</p>
+    <p>Todos los días de 9:00 hs. a 21:00 hs.</p>
+    <p>El spa ofrece:</p>
+    <ul>
+      <li>Sala de masajes</li>
+      <li>Reflexología</li>
+      <li>Aromaterapia </li>
+      <li>Sauna seco</li>
+      <li>Hidromasaje</li>
+      <li>Ducha escocesa</li>
+      <li>Area relax</li>
+    </ul>
+    <article>
+      <h3>Circuito Clásico</h3>
+      <p>Sauna seco + Hidromasaje + Ducha escocesa + Relax con vista a la cordillera + Snacks y bebidas.</p>
+      <p>$800 por persona | 45 min</p>
+      <p>GRATIS PARA RESERVAS DIRECTAS DE ALOJAMIENTO</p>
+      <input type="submit" value="Reservar">
+    </article>
+    <hr>
+    <article>
+      <img src="images/spa-te.jpg" alt="imagen de la promocion" width="400">
+      <h3>Sesión de Spa + Tarde de Té</h3>
+      <p>Circuito Clásico + Exfoliación corporal con olivas + Hidratación corporal con crema a base de olivas + 
+      Masaje relajante con aceite de oliva + Tarde de Té</p>
+      <p>$4700 por persona | 3 horas</p>
+      <input type="submit" value="Reservar">
+    </article>
+    <hr>
+    <article>
+      <img src="images/promo-spa.jpg" alt="imagen de la prmocion" width="400">
+      <h3>Sesión de Spa + Cena</h3>
+      <p>Circuito Clásico + Exfoliación corporal con olivas + Hidratación corporal con crema a base de olivas + Masaje relajante 
+      con aceite de oliva + Cena de 3 pasos a elección maridada con vino</p>
+      <p>$5700 por persona | 4 horas</p>
+      <input type="submit" value="Reservar">
+    </article>
+  </section>
+  <section>
+    <img src="images/nuestro-restaurante.jpg" alt="restaurante" width="400">
+    <h2><a href="restaurante.html">Nuestro restaurante</a></h2>
+    <p>La cocina de nuestro restaurante se basa en los sabores simples, naturales, que resultan de combinar productos regionales
+     de calidad y de cada estación con la creatividad de nuestro chef.</p>
+  </section>
+  <section id="wine">
+    <img src="images/wine-tour.jpg" alt="imaben wine-tour" width="400">
+    <h2>Wine tour</h2>
+    <hr>
+    <p>Los recogemos por el hotel entre las 8.35 / 8.55 de la mañana por tu hotel e iniciamos un recorrido por  Luján de Cuyo, el corazón 
+    vitivinícola de Mendoza. Nuestro guía los acompañará por tres bodegas premium, antiguas y modernas, de alta tecnología y pintorescas,
+    con las montañas nevadas como telón de fondo. Nuestra primera visita es Budeguer, una bodega moderna propiedad de una familia 
+    argentina que produce excelentes Chardonnay y Malbec. A continuación, tenemos una visita y degustación en Terrazas de los Andes,
+    una bodega antigua completamente renovada y restaurada por Chandon. Aquí el enfoque se centra principalmente en hacer grandes y 
+    concentrados Malbecs. Al mediodía visitamos Casarena, donde nos acomodaremos en el restaurante para disfrutar de un almuerzo gourmet
+    presentado en varios platos con maridaje de vinos mientras disfrutamos de hermosas vistas de los viñedos y las montañas. Terminamos 
+    el día Mendel, una bodega pequeña y centenaria operada por el enólogo más famoso de Mendoza: Roberto de la Mota. Regresamos al hotel
+    a las 5.15pm</p>
+    <p>Este itinerario es solo un ejemplo. La selección de bodegas puede cambiar dependiendo del día y disponibilidad.</p>
+  
+<!--INVESTIAR BIEN A FONDO ESTO AL FINAL DE LA PAGINA :(-->
+  </section>
+  <div>
+    <img src="images/bodega-b.jpg" alt="imagen bodega Budeguer" width="400">
+    <img src="images/bodega-t.jpg" alt="imagen bodega Terraza de los Andes" width="400">
+    <img src="images/bodegam.jpg" alt="imagen bodega Malbec" width="400">
+    <img src="images/bodegam2.jpg" alt="imagen bodega Malbec" width="400">
+    <img src="images/bodegat2.jpg" alt="imagen biñedos" width="400">
+</div>
+  <section>
+    <H2 id="servicios">Servicios</H2>
+    <div>
+      <img src="images/icono-wifi.jpg" alt="wi-fi"  width="80">
+      <label>Wi-Fi</label>
+      <img src="images/icono-serv.png" alt="servicio a la habitacion" width="80">
+      <label>Servicio a la habitación</label>
+      <img src="images/icono-sala-de-no-fumadores.png" alt="sala de no fumadores" width="80">
+      <label>Sala de no fumadores</label>
+      <img src="images/icono-recepcion-24.png" alt="recepcion 24hs" title="icono de recepcion las 24 horas" width="80">
+      <label>Recepción las 24hs.</label>
+      <img src="images/icono-personal-multilingue.png" alt="personal multilingûe" width="80">
+      <label>Personal multilingüe</label>
+      <img src="images/templada.png" alt="piscina templada" width="100">
+      <label>Piscina templada</label>
+      <br>
+      <br>
+      <br>
+      <img src="images/icono-lavanderia.png" alt="lavanderia" width="80">
+      <label>Lavanderia</label>
+      <img src="images/icono-informacion-turistica.jpg" alt="informacion turistica" width="80">
+      <label>Info turistica</label>
+      <img src="images/icono-de-bar.png" alt="bar" width="80">
+      <label>Bar</label>
+      <img src="images/icono-de-cuna.png" alt="cuna" width="80">
+      <label>Cuna gratis</label>
+      <img src="images/icono-calfecaccion-central.jpg" alt="calefaccion central" width="90">
+      <label>Calefaccion central</label>
+      <img src="images/icono-aire-acondicionado.jpg" alt="aire acondicionado" width="80">
+      <label>Aire acondicionado</label>
+      <img src="images/icono-de-taxi.png" alt="taxi" width="80">
+      <label>Taxi</label>
+      <br>
+      <br>
+      <br>
+      <img src="images/icono-emergencias.png" alt="emergencias" width="80">
+      <label >Emergencias las 24hs.</label>
+    </div>
+  </section>
+  <section id="ubicacion">
+    <h2>Ubicación</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13379.2925943153!2d-68.93784550370717!3d-33.034789449872754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1585017120043!5m2!1ses-419!2sar"
+     width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  </section>
+</main>
+<footer>
+  <h3>Contacto</h3>
+  <div>
+      <h4>Telefono</h4>
+      <p>2615352115-4913049</p>
+      <h4>E-mail</h4>
+      <p>richy-hotel-spa@gmail.com</p>
+      <h4>Direccion</h4>
+      <p>Roque Saenz Peña 5500-5000 Lujan, Mendoza</p>
+   </div>
+   <div>
+      <h3>Siguenos</h3>
+      <img src="images/logo-fb.png" alt="facebook" width="90">
+      <img src="images/logo-insta.jpg" alt="instagram" width="70">
+      <img src="images/logo-tw.png" alt="twitter" width="40">
+    </div>
+    <div>
+      <h3>Suscribirse</h3>
+      <input type="email" name="email-suscripcion" placeholder="Introduzca su e-mail" required>
+      <input type="submit" value="SUSCRIBIRSE">
+    </div> 
+</footer>
+</body>
+</html>
